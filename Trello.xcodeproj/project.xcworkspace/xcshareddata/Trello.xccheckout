@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0F183DD5-AC9D-45F8-8043-47A13C13D161</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Trello</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9DB1892F-3DAB-4C6C-9575-A2A34EF998E5</key>
+		<string>https://github.com/reneretz/Trello.app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Trello.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9DB1892F-3DAB-4C6C-9575-A2A34EF998E5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/reneretz/Trello.app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9DB1892F-3DAB-4C6C-9575-A2A34EF998E5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9DB1892F-3DAB-4C6C-9575-A2A34EF998E5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Trello</string>
+		</dict>
+	</array>
+</dict>
+</plist>
