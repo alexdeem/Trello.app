@@ -39,8 +39,10 @@ decidePolicyForNavigationAction:(NSDictionary *)actionInformation
         request:(NSURLRequest *)request frame:(WebFrame *)frame
 decisionListener:(id < WebPolicyDecisionListener >)listener
 {
+    NSArray *accepted = [NSArray arrayWithObjects:@"www.trello.com", @"trello.com", @"accounts.google.com", @"www.google.com", nil];
     NSString *host = [[request URL] host];
-    if ([host isNotEqualTo:@"www.trello.com"] && [host isNotEqualTo:@"trello.com"]) {
+    if (![accepted containsObject:host]) {
+        NSLog(@"Opening page externally: %@", host);
         [[NSWorkspace sharedWorkspace] openURL:[request URL]];
     } else {
         [listener use];
