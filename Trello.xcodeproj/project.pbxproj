@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C4875CE415B8D630005EB4E8 /* Trello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4875CE415B8D630005EB4E8 /* Pivotal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pivotal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4875CE815B8D630005EB4E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C4875CEB15B8D630005EB4E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C4875CEC15B8D630005EB4E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -59,7 +59,7 @@
 		C4875CE515B8D630005EB4E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4875CE415B8D630005EB4E8 /* Trello.app */,
+				C4875CE415B8D630005EB4E8 /* Pivotal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 			);
 			name = Trello;
 			productName = Trello;
-			productReference = C4875CE415B8D630005EB4E8 /* Trello.app */;
+			productReference = C4875CE415B8D630005EB4E8 /* Pivotal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +265,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trello/Trello-Prefix.pch";
 				INFOPLIST_FILE = "Trello/Trello-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pivotal;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -277,7 +277,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trello/Trello-Prefix.pch";
 				INFOPLIST_FILE = "Trello/Trello-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pivotal;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

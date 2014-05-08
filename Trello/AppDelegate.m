@@ -14,7 +14,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    NSString *urlAddress = @"https://www.trello.com/login";
+    NSString *urlAddress = @"https://www.pivotaltracker.com/signin";
     
     NSURL *url = [NSURL URLWithString:urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -40,12 +40,13 @@ decidePolicyForNavigationAction:(NSDictionary *)actionInformation
         request:(NSURLRequest *)request frame:(WebFrame *)frame
 decisionListener:(id < WebPolicyDecisionListener >)listener
 {
-    NSArray *accepted = [NSArray arrayWithObjects:@"www.trello.com", @"trello.com", @"accounts.google.com", @"www.google.com", nil];
     NSNumber *navigationType = actionInformation[WebActionNavigationTypeKey];
     if ([navigationType intValue] == 5) {
         [listener use];
         return;
     }
+    
+    NSArray *accepted = [NSArray arrayWithObjects:@"www.pivotaltracker.com", @"pivotaltracker.com", @"accounts.google.com", @"www.google.com", nil];
     NSString *host = [[request URL] host];
     if (![accepted containsObject:host]) {
         NSLog(@"Opening page externally: %@", host);
