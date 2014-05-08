@@ -41,6 +41,11 @@ decidePolicyForNavigationAction:(NSDictionary *)actionInformation
 decisionListener:(id < WebPolicyDecisionListener >)listener
 {
     NSArray *accepted = [NSArray arrayWithObjects:@"www.trello.com", @"trello.com", @"accounts.google.com", @"www.google.com", nil];
+    NSNumber *navigationType = actionInformation[WebActionNavigationTypeKey];
+    if ([navigationType intValue] == 5) {
+        [listener use];
+        return;
+    }
     NSString *host = [[request URL] host];
     if (![accepted containsObject:host]) {
         NSLog(@"Opening page externally: %@", host);
