@@ -21,6 +21,7 @@
     
     [webview setPolicyDelegate:self];
     [webview setUIDelegate:self];
+    [webview setApplicationNameForUserAgent:@"Safari/537.75.14"];
 
     [[webview mainFrame] loadRequest:requestObj];
 }
